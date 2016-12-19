@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-g -Wall
+SOURCES=b-baum.cpp
+EXECUTABLE=b-baum
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $(EXECUTABLE)

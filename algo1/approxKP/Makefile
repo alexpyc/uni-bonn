@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-g -Wall
+SOURCES=approxKP.cpp
+EXECUTABLE=approxKP
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $(EXECUTABLE)

@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-g -Wall
+SOURCES=dfs.cpp
+EXECUTABLE=dfs
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $(EXECUTABLE)
