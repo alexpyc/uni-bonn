@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-g -Wall
+EXECUTABLE=main
+SOURCES=$(EXECUTABLE).cpp
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $(EXECUTABLE)
